@@ -16,7 +16,7 @@ steps:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
 
-- script:
+- script: |
     npm install -g yarn
     yarn install
     yarn build
