@@ -23,7 +23,7 @@ steps:
 - task: AzureStaticWebApp@0
   inputs:
     app_location: '/'
-    api_location: 'api'
+    app_build_command: 'yarn build'
     output_location: '/dist'
   env:
     azure_static_web_apps_api_token: 8a425346ed3ea7d3f9610d53964afa48243e6c534163035bf137af4fbed66eb0-fd7f9b3d-770f-406d-8555-9a1149c9ea7500327486
